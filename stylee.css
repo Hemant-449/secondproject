@@ -1,0 +1,37 @@
+img {
+    max-width: 100%;
+  }
+  textarea {
+    min-height: 100px !important;
+  }
+  .poligon {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  }
+  .shape-left {
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  }
+  .octagon {
+    clip-path: polygon(50% 0, 100% 17%, 100% 46%, 100% 70%, 100% 100%, 48% 90%, 0 100%, 0 16%);
+  }
+  .progress-line {
+    transform-origin: left;
+    z-index: 9999;
+    scale: 0 1;
+    animation-name: progressLine;
+    animation-timing-function: linear;
+    animation-timeline: scroll();
+  }
+  .section-padding {
+    padding: 90px 0;
+  }
+  #projectTab li button.active {
+    color: yellow !important;
+    background-color: #121212 !important;
+  }
+  
+  @keyframes progressLine {
+    to {
+      scale: 1 1;
+    }
+  }
+  
